@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/layout_bg"
+    android:backgroundTint="#4dbd80"
     >
 
     <com.google.android.material.textfield.TextInputLayout
@@ -31,7 +32,9 @@
             android:layout_height="match_parent"
             android:inputType="text"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:background="@drawable/layout_bg"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -58,6 +61,7 @@
             android:layout_height="match_parent"
             android:inputType="textEmailAddress"
             android:textColor="@color/black"
+            android:background="@drawable/layout_bg"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,6 +87,7 @@
             android:layout_height="match_parent"
             android:inputType="textPassword"
             android:textColor="@color/black"
+            android:background="@drawable/layout_bg"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -108,6 +113,7 @@
             android:layout_height="match_parent"
             android:inputType="textPassword"
             android:textColor="@color/black"
+            android:background="@drawable/layout_bg"
             android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -134,7 +140,9 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_weight="1"
-        android:background="@drawable/button_bg"
+        android:background="@drawable/regist_bg"
+
+
         android:text="SIGN UP"
         android:textColor="@color/black"
         android:textSize="12sp"
