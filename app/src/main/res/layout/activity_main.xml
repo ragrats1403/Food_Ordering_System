@@ -71,16 +71,18 @@
                 android:id="@+id/navigatesignup"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_bg"
-                android:text="SIGN UP"
                 android:clickable="true"
+                android:text="SIGN UP"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text" />
+                app:layout_constraintTop_toBottomOf="@+id/text"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/text"
@@ -89,7 +91,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="start"
                 android:text="New here? Sign UP"
-                android:clickable="true"
+
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -102,13 +104,15 @@
                 android:layout_marginTop="16dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_bg"
+                android:clickable="true"
                 android:text="LOGIN"
                 android:textColor="@color/black"
                 android:textSize="12sp"
-                android:clickable="true"
                 app:layout_constraintEnd_toEndOf="@+id/passwordLayout"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="@+id/passwordLayout"
-                app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordLayout"
