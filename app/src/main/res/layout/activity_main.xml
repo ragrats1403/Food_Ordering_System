@@ -6,7 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:backgroundTint="#87f542"
+    android:background="@drawable/gradient_bg"
+
+
+
     >
 
 
@@ -14,21 +17,22 @@
         android:layout_width="match_parent"
         android:layout_height="368dp"
         android:layout_weight="1"
-        app:cardBackgroundColor="#87f542">
+        app:cardBackgroundColor="#00000000"
+        >
+
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/transparent_test2" />
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="#87f542"
+        android:background="@drawable/reverse_gradient"
 
         android:orientation="vertical">
 
@@ -44,7 +48,6 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/usernamelayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="32dp"
@@ -68,11 +71,10 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/navigatesignup"
+                android:id="@+id/signup"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="4dp"
-                android:layout_weight="1"
                 android:background="@drawable/button_bg"
                 android:clickable="true"
                 android:text="SIGN UP"
@@ -81,8 +83,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/text" />
 
             <TextView
                 android:id="@+id/text"
@@ -102,7 +103,6 @@
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="16dp"
-                android:layout_weight="1"
                 android:background="@drawable/button_bg"
                 android:clickable="true"
                 android:text="LOGIN"
@@ -111,12 +111,10 @@
                 app:layout_constraintEnd_toEndOf="@+id/passwordLayout"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="@+id/passwordLayout"
-                app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="32dp"
